@@ -18,10 +18,11 @@
       <h2>Find any word exist in the world :)</h2>
       <div class="form-wrap">
         <div class="input-wrap">
-          <input type="text" placeholder="Type a word" id="input" />
+          <input type="text" placeholder="Type a word" id="input" value="" />
           <button id="search">Search</button>
         </div>
       </div>
+      <button onClick="refresh(this)" id="refresh">Refresh</button>
     </section>
 
     <section class="data container">
@@ -29,6 +30,17 @@
       <p class="def"></p>
       <div class="audio"></div>
       <div class="not-found"></div>
+    </section>
+
+    <section class="container history">
+      <div class="history-cta">
+        <button class="btn btn-blue" onClick="showHistory()">My history</buttonclass>
+          <button class="btn btn-red" onClick="clearHistory()">Clear all</buttonclass>
+      </div>
+      <div class="history-data">
+        <ol id="history-list">
+        </ol>
+      </div>
     </section>
 
     <script src="app.js"></script>

@@ -26,6 +26,9 @@ nav {
 }
 
 section.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 60px;
   padding: 40px 0;
   border: 2px solid #ddd;
@@ -76,6 +79,18 @@ input::placeholder {
   background-color: #704cd4;
 }
 
+#refresh {
+  margin-top: 20px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 3px;
+  border-style: none;
+  background-color: #745abb;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+}
+
 section.data {
   width: 70%;
   max-width: 600px;
@@ -101,12 +116,54 @@ section.data p.def {
   border-radius: 4px;
   margin: 5px 10px 0 0;
   display: inline-block;
+  cursor: pointer;
 }
 
 .audio {
   margin: 30px;
 }
 
+.history-cta {
+  max-width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 3px;
+  border-style: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-blue {
+  background-color: #553c9a;
+}
+
+.btn-red {
+  background-color: #f35f5f;
+}
+
+.history-data {
+  display: none;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin: 20px 0;
+}
+.history-data p {
+  padding: 10px;
+}
+
+ol {
+  margin: 0 0 0 25px;
+}
+
+#history-list li {
+  padding: 15px 20px;
+}
 @media only screen and (max-width: 625px) {
   h1,
   h2 {
