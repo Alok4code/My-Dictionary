@@ -12,6 +12,11 @@ body {
   background-color: #f7f7f7;
 }
 
+.dark-mode {
+  background-color: rgb(70, 70, 70);
+  color: #fff;
+}
+
 .container {
   max-width: 80%;
   margin: 0 auto;
@@ -25,11 +30,33 @@ nav {
   border-radius: 0 0 3px 3px;
 }
 
+.toggle-btn {
+  border-style: none;
+}
+
+.date-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+#toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 section.input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
   padding: 40px 0;
   border: 2px solid #ddd;
   border-radius: 5px;
@@ -105,7 +132,7 @@ section.data {
 
 section.data p.def {
   font-size: 20px;
-  color: #2d3748;
+  color: #4c83e2;
   line-height: 1.6;
 }
 

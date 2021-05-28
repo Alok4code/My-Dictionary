@@ -129,3 +129,16 @@ function clearHistory() {
     }
   }
 }
+
+let dt = new Date();
+document.getElementById('pickDate').innerHTML = dt.toLocaleString();
+
+function toggleBtn() {
+  let element = document.body;
+  element.classList.toggle('dark-mode');
+  if (element.classList.contains('dark-mode')) {
+    document.getElementById('myImg').src = './img/light-mode.png';
+  } else {
+    document.getElementById('myImg').src = './img/dark-mode.png';
+  }
+}
