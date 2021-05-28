@@ -68,6 +68,10 @@ h2 {
   margin-bottom: 20px;
 }
 
+h3 {
+  font-size: 16px;
+}
+
 .form-wrap {
   display: flex;
   justify-content: center;
@@ -147,7 +151,12 @@ section.data p.def {
 }
 
 .audio {
-  margin: 30px;
+  margin: 30px auto;
+}
+
+audio {
+  width: 100%;
+  max-width: 320px;
 }
 
 .history-cta {
@@ -195,6 +204,10 @@ ol {
   h1,
   h2 {
     font-size: 22px;
+  }
+
+  h3 {
+    font-size: 14px;
   }
 
   .input-wrap {
