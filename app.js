@@ -141,7 +141,9 @@ function toggleBtn() {
   element.classList.toggle('dark-mode');
   if (element.classList.contains('dark-mode')) {
     document.getElementById('myImg').src = './img/light-mode.png';
+    document.getElementById('def').style.color = 'white';
   } else {
     document.getElementById('myImg').src = './img/dark-mode.png';
+    document.getElementById('def').style.color = 'black';
   }
 }
