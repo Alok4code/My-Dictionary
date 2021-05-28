@@ -129,9 +129,12 @@ function clearHistory() {
     }
   }
 }
-
-let dt = new Date();
-document.getElementById('pickDate').innerHTML = dt.toLocaleString();
+function time() {
+  let dt = new Date();
+  document.getElementById('pickDate').innerHTML = dt.toLocaleString();
+  setTimeout(time, 1000);
+}
+time();
 
 function toggleBtn() {
   let element = document.body;
